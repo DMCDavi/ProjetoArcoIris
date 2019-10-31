@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="580.0" styleClass="anchor-pane" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arcoiris.SignInController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button layoutX="230.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" styleClass="save" text="Entrar">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="166.0" layoutY="230.0" prefHeight="25.0" prefWidth="245.0" promptText="Digite sua senha" styleClass="password-signin" />
+      <TextField fx:id="mail" layoutX="166.0" layoutY="176.0" prefHeight="25.0" prefWidth="245.0" promptText="Digite seu e-mail" styleClass="mail-signin" />
+      <Label layoutX="43.0" layoutY="34.0" prefHeight="40.0" prefWidth="245.0" text="Olá novamente!">
+         <font>
+            <Font name="Poppins Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="159.0" text="E-mail" />
+      <Label layoutX="45.0" layoutY="74.0" prefHeight="40.0" prefWidth="223.0" text="Digite seu e-mail e senha para fazer o login" wrapText="true">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="25.0" layoutY="130.0" prefHeight="2.0" prefWidth="527.0" />
+      <Label layoutX="176.0" layoutY="213.0" text="Senha" />
+      <ImageView fx:id="iconRainbowHeart" fitHeight="91.0" fitWidth="91.0" layoutX="461.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icon_rainbow_heart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="224.0" layoutY="325.0" onMouseReleased="#signInMouseReleased" text="Não tenho uma conta" textFill="#00bfff" />
+    </children>
+</AnchorPane>

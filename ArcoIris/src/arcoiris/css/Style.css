@@ -1,0 +1,46 @@
+.text-field {
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Poppins";
+}
+.choice-box {
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Poppins";
+}
+.label {
+    -fx-font-family: "Poppins";
+}
+.anchor-pane{
+    -fx-background-color: #ffffff;
+}
+.button {
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+}
+.name {
+    -fx-border-color: #ff0000;
+}
+.mail {
+    -fx-border-color: #ff7f00;
+}
+.sex {
+    -fx-border-color: #ffff00;
+}
+.gender {
+    -fx-border-color: #33ff33;
+}
+.password {
+    -fx-border-color: #0000ff;
+}
+.conf_password {
+    -fx-border-color: #4b0082;
+}
+.mail-signin {
+    -fx-border-color: #ff33ff;
+}
+.password-signin {
+    -fx-border-color: #ff33ff;
+}
