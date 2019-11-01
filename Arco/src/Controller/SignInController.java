@@ -3,7 +3,7 @@ Pendencias:
     - 
 */
 
-package arcoiris;
+package Controller;
 
 import java.net.URL;
 
@@ -23,7 +23,7 @@ public class SignInController implements Initializable {
     
     @FXML
     protected void signInMouseReleased(){
-        Main.changeScreen("SignUp");
+        View.Main.changeScreen("SignUp");
     }
     
     @Override

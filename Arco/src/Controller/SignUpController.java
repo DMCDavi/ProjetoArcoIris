@@ -8,7 +8,7 @@ Pendencias:
     - Exibir mensagens de erro;
 */
 
-package arcoiris;
+package Controller;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class SignUpController implements Initializable {
     
     @FXML
     protected void signUpMouseReleased(){
-        Main.changeScreen("SignIn");
+        View.Main.changeScreen("SignIn");
     }
 
     private void sexBox() {
