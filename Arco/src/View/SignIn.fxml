@@ -13,7 +13,7 @@
 <AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="580.0" styleClass="anchor-pane" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignInController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Button layoutX="230.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" styleClass="save" text="Entrar">
+      <Button layoutX="230.0" layoutY="279.0" mnemonicParsing="false" onAction="#getInOnAction" prefHeight="25.0" prefWidth="118.0" styleClass="save" text="Entrar">
          <font>
             <Font name="Poppins Regular" size="12.0" />
          </font>

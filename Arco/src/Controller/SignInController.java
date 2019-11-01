@@ -26,6 +26,11 @@ public class SignInController implements Initializable {
         View.Main.changeScreen("SignUp");
     }
     
+    @FXML
+    protected void getInOnAction(){
+        View.Main.changeScreen("Dashboard");
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         DropShadow ds = new DropShadow();
