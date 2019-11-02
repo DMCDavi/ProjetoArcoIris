@@ -1,39 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileController">
   <children>
-      <MenuBar>
-         <menus>
-            <Menu mnemonicParsing="false" text="Navegar">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#homeOnAction" text="Home" />
-                  <MenuItem mnemonicParsing="false" onAction="#calendarOnAction" text="Calendário" />
-                  <MenuItem mnemonicParsing="false" onAction="#psychoOnAction" text="Psicólogo" />
-                  <MenuItem mnemonicParsing="false" onAction="#lawOnAction" text="Leis" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Perfil" />
-                  <MenuItem mnemonicParsing="false" onAction="#exitOnAction" text="Sair" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-          <font>
-            <Font size="18.0" />
-          </font>
-        </Label>
-      </children>
+    <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="anchor-pane" stylesheets="@css/Style.css" VBox.vgrow="ALWAYS">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="Navegar">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#homeOnAction" text="Home" />
+                        <MenuItem mnemonicParsing="false" onAction="#calendarOnAction" text="Calendário" />
+                        <MenuItem mnemonicParsing="false" onAction="#psychoOnAction" text="Psicólogo" />
+                        <MenuItem mnemonicParsing="false" onAction="#lawOnAction" text="Leis" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Perfil" />
+                        <MenuItem mnemonicParsing="false" onAction="#exitOnAction" text="Sair" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Button layoutX="265.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" styleClass="save" text="Salvar">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="chSex" layoutX="201.0" layoutY="183.0" prefHeight="25.0" prefWidth="245.0" styleClass="sex" />
+            <PasswordField fx:id="password" layoutX="201.0" layoutY="276.0" prefHeight="25.0" prefWidth="245.0" promptText="Digite sua senha" styleClass="password" />
+            <TextField fx:id="name" layoutX="201.0" layoutY="91.0" prefHeight="25.0" prefWidth="245.0" promptText="Digite seu nome completo" styleClass="name" />
+            <Label layoutX="251.0" layoutY="27.0" prefHeight="40.0" prefWidth="145.0" text="Meu perfil">
+               <font>
+                  <Font name="Poppins Black" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="96.0" text="Nome" />
+            <TextField fx:id="mail" layoutX="201.0" layoutY="137.0" prefHeight="25.0" prefWidth="245.0" promptText="Digite seu e-mail" styleClass="mail" />
+            <Label layoutX="141.0" layoutY="142.0" text="E-mail" />
+            <Label layoutX="146.0" layoutY="188.0" text="Sexo" />
+            <ChoiceBox fx:id="chGender" layoutX="201.0" layoutY="229.0" prefHeight="25.0" prefWidth="245.0" styleClass="gender" />
+            <Label layoutX="138.0" layoutY="234.0" text="Gênero" />
+            <Label layoutX="142.0" layoutY="281.0" text="Senha" />
+         </children>
     </AnchorPane>
   </children>
 </VBox>

@@ -1,38 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PsychoController">
   <children>
-      <MenuBar>
-         <menus>
-            <Menu mnemonicParsing="false" text="Navegar">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#homeOnAction" text="Home" />
-                  <MenuItem mnemonicParsing="false" onAction="#calendarOnAction" text="Calendário" />
-                  <MenuItem mnemonicParsing="false" text="Psicólogo" />
-                  <MenuItem mnemonicParsing="false" onAction="#lawOnAction" text="Leis" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" onAction="#profileOnAction" text="Perfil" />
-                  <MenuItem mnemonicParsing="false" onAction="#exitOnAction" text="Sair" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="378.0" prefWidth="533.0" styleClass="anchor-pane" stylesheets="@css/Style.css" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-          <font>
-            <Font size="18.0" />
-          </font>
-        </Label>
+            <Button layoutX="390.0" layoutY="343.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" styleClass="save" text="Marcar">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="106.0" layoutY="34.0" prefHeight="40.0" prefWidth="391.0" text="Marque sua consulta aqui!">
+               <font>
+                  <Font name="Poppins Black" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="87.0" prefHeight="118.0" prefWidth="196.0" text="Se vocẽ está procurando ajuda, ou apenas quer alguém para conversar e desabafar, marque aqui sua consulta com um psicologo!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="344.0" layoutY="164.0" text="Psicólogo" />
+            <Label layoutX="426.0" layoutY="277.0" text="Horário" />
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="Navegar">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#homeOnAction" text="Home" />
+                        <MenuItem mnemonicParsing="false" onAction="#calendarOnAction" text="Calendário" />
+                        <MenuItem mnemonicParsing="false" text="Psicólogo" />
+                        <MenuItem mnemonicParsing="false" onAction="#lawOnAction" text="Leis" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#profileOnAction" text="Perfil" />
+                        <MenuItem mnemonicParsing="false" onAction="#exitOnAction" text="Sair" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <ChoiceBox fx:id="institution" layoutX="333.0" layoutY="126.0" opacity="0.35" prefHeight="25.0" prefWidth="245.0" styleClass="institution" />
+            <Label layoutX="129.0" layoutY="204.0" prefHeight="27.0" prefWidth="22.0" text="OU" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="227.0" prefHeight="81.0" prefWidth="146.0" text="Entre em contato com o CVV (Centro de Valorização à Vida)" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="301.0" prefHeight="75.0" prefWidth="101.0" styleClass="cvv-num" text="188" textAlignment="CENTER" textFill="#ff33ff" wrapText="true">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="psycho" layoutX="333.0" layoutY="181.0" opacity="0.35" prefHeight="25.0" prefWidth="245.0" styleClass="institution" />
+            <Label layoutX="344.0" layoutY="109.0" text="Instituição" />
+            <Label layoutX="388.0" layoutY="218.0" text="Data" />
+            <DatePicker fx:id="date" layoutX="377.0" layoutY="237.0" prefHeight="27.0" prefWidth="157.0" styleClass="date-picker" />
+            <Label layoutX="449.0" layoutY="300.0" text=":" />
+            <TextField fx:id="hour" layoutX="391.0" layoutY="296.0" prefHeight="27.0" prefWidth="44.0" styleClass="mail-signin" />
+            <TextField fx:id="minute" layoutX="463.0" layoutY="296.0" prefHeight="27.0" prefWidth="44.0" styleClass="mail-signin" />
       </children>
     </AnchorPane>
   </children>

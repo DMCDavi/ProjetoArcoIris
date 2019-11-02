@@ -44,3 +44,19 @@
 .password-signin {
     -fx-border-color: #ff33ff;
 }
+.menu-bar {
+    -fx-background-color: #ffffff;
+}
+.cvv-num {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 60;
+}
+.institution {
+    -fx-background-color: #ff33ff;
+}
+.date-picker {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: #ff33ff;
+    -fx-background-color: #ffffff;
+}
