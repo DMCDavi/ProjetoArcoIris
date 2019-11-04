@@ -15,6 +15,7 @@
 }
 .anchor-pane{
     -fx-background-color: #ffffff;
+    -fx-background: #ffffff;
 }
 .button {
     -fx-background-radius: 100;
@@ -48,7 +49,6 @@
     -fx-background-color: #ffffff;
 }
 .cvv-num {
-    -fx-font-family: "Poppins";
     -fx-font-size: 60;
 }
 .institution {
@@ -61,9 +61,16 @@
     -fx-background-color: #ffffff;
 }
 .date-hour {
-    -fx-font-family: "Poppins";
     -fx-font-size: 30;
 }
 .choice-events {
     -fx-border-color: #000000;
+}
+.name_event {
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-text-fill: #ff33ff;
+}
+.time_event {
+    -fx-font-size: 20;
 }

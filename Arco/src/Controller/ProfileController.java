@@ -32,11 +32,6 @@ public class ProfileController implements Initializable {
     }
 
     @FXML
-    protected void lawOnAction() {
-        View.Main.changeScreen("Law");
-    }
-
-    @FXML
     protected void calendarOnAction() {
         View.Main.changeScreen("Calendar");
     }

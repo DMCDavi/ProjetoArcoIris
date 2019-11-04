@@ -13,7 +13,6 @@ public class Main extends Application {
     private static Scene signInScene;
     private static Scene dashboardScene;
     private static Scene profileScene;
-    private static Scene lawScene;
     private static Scene psychoScene;
     private static Scene calendarScene;
 
@@ -28,8 +27,6 @@ public class Main extends Application {
         dashboardScene = new Scene(fxmlDashboard);
         Parent fxmlProfile = FXMLLoader.load(getClass().getResource("Profile.fxml"));
         profileScene = new Scene(fxmlProfile);
-        Parent fxmlLaw = FXMLLoader.load(getClass().getResource("Law.fxml"));
-        lawScene = new Scene(fxmlLaw);
         Parent fxmlPsycho = FXMLLoader.load(getClass().getResource("Psycho.fxml"));
         psychoScene = new Scene(fxmlPsycho);
         Parent fxmlCalendar = FXMLLoader.load(getClass().getResource("Calendar.fxml"));
@@ -52,9 +49,6 @@ public class Main extends Application {
                 break;
             case "Profile":
                 stage.setScene(profileScene);
-                break;
-            case "Law":
-                stage.setScene(lawScene);
                 break;
             case "Calendar":
                 stage.setScene(calendarScene);

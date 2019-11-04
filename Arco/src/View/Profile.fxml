@@ -24,7 +24,6 @@
                         <MenuItem mnemonicParsing="false" onAction="#homeOnAction" text="Home" />
                         <MenuItem mnemonicParsing="false" onAction="#calendarOnAction" text="Calendário" />
                         <MenuItem mnemonicParsing="false" onAction="#psychoOnAction" text="Psicólogo" />
-                        <MenuItem mnemonicParsing="false" onAction="#lawOnAction" text="Leis" />
                         <SeparatorMenuItem mnemonicParsing="false" />
                         <MenuItem mnemonicParsing="false" text="Perfil" />
                         <MenuItem mnemonicParsing="false" onAction="#exitOnAction" text="Sair" />
