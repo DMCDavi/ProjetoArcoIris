@@ -60,3 +60,10 @@
     -fx-border-color: #ff33ff;
     -fx-background-color: #ffffff;
 }
+.date-hour {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 30;
+}
+.choice-events {
+    -fx-border-color: #000000;
+}
