@@ -8,7 +8,6 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -70,8 +69,8 @@
             <Label layoutX="388.0" layoutY="218.0" text="Data" />
             <DatePicker fx:id="date" layoutX="377.0" layoutY="237.0" prefHeight="27.0" prefWidth="157.0" styleClass="date-picker" />
             <Label layoutX="449.0" layoutY="300.0" text=":" />
-            <TextField fx:id="hour" layoutX="391.0" layoutY="296.0" prefHeight="27.0" prefWidth="44.0" styleClass="mail-signin" />
-            <TextField fx:id="minute" layoutX="463.0" layoutY="296.0" prefHeight="27.0" prefWidth="44.0" styleClass="mail-signin" />
+            <ChoiceBox fx:id="hour" layoutX="382.0" layoutY="296.0" prefHeight="27.0" prefWidth="58.0" styleClass="mail-signin" />
+            <ChoiceBox fx:id="minute" layoutX="462.0" layoutY="296.0" prefHeight="27.0" prefWidth="58.0" styleClass="mail-signin" />
       </children>
     </AnchorPane>
   </children>

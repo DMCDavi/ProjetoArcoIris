@@ -4,7 +4,7 @@ Pendencias:
     - Adicionar data e horario no calendario;
     - Nao deixar o usuario marcar numa data anterior;
     - Nao deixar o usuario marcar no mesmo dia e horario de outra consulta ja marcada;
-    - Nao deixar o usuario inserir horarios invalidos;
+    - Colocar os horarios na choice box;
 */
 
 package Controller;
@@ -22,10 +22,7 @@ import javafx.scene.paint.Color;
 public class PsychoController implements Initializable {
 
     @FXML
-    ChoiceBox institution, psycho;
-    
-    @FXML
-    TextField hour, minute;
+    ChoiceBox institution, psycho, hour, minute;
     
     @FXML
     DatePicker date;
