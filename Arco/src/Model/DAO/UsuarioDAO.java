@@ -2,7 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
+ 
 package Model.DAO;
 
 import Model.Usuario;
@@ -13,7 +13,7 @@ import java.sql.ResultSet;
 /**
  *
  * @author Luis Felipe
- */
+ 
 public class UsuarioDAO {
         Conexao conexao;
     
@@ -27,7 +27,7 @@ public class UsuarioDAO {
    }
     
     public void insereUsuario(Usuario usuario){
-        ver depois
+        //ver depois
  String script = "Insert Into usuarios(nome,idade,altura,peso,fuma,alcool,sexo,imc,usuario,senha,grupoderiscoid) value (?,?,?,?,?,?,?,?,?,?,?)";
     
    try{
@@ -47,7 +47,7 @@ public class UsuarioDAO {
         ps.setString(10,usuario.getSenha());
         ps.setInt(11,usuario.getIdgrupoderisco());
         ps.execute();
-       */
+       
         
         
         }catch(Exception error){
@@ -88,7 +88,7 @@ public class UsuarioDAO {
     
     
     public void EditaUsuario(Usuario usuario){
-      /*  
+        
         String script = "Update usuarios set nome = ?, idade = ?, peso = ?, usuario = ?, senha = ?, altura = ?, sexo = ?,"
                 + " fuma = ? , alcool = ? , imc = ? where idusuario = ?";
         
@@ -109,10 +109,11 @@ public class UsuarioDAO {
        ps.setDouble(10,usuario.getImc());
        ps.setInt(11,usuario.getId());
        ps.executeUpdate();
-     */
+     
         }catch(Exception error){
             
             System.out.println("Erro: "+error.getMessage()); 
         }    
     }
 }
+*/

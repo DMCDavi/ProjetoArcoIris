@@ -7,10 +7,6 @@ package Model.DAO;
 
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-
 /**
  *
  * @author Luis Felipe
@@ -33,13 +29,14 @@ public class Conexao {
            String senha = "root";
            
            return (Connection)DriverManager.getConnection(servidor,usuario,senha);
+           
             
         }catch(Exception error){
             
             System.out.println("Erro:"+error.getMessage());
           
         }
-        
+       
         return null;
     }
      
