@@ -19,8 +19,7 @@ import java.util.ArrayList;
 //COMENTEI PQ TAVA DANDO ERRO NAO SEI PQ
 //JOAO VÊ ISSO PF
 
-/*
-public class Conexão {
+public class Conexao {
         Connection conexao;
      
       
@@ -29,7 +28,7 @@ public class Conexão {
         try{
             
            Class.forName("com.mysql.jdbc.Driver");
-          // String servidor ="jdbc:mysql://localhost:3306/vitae";
+           String servidor ="jdbc:mysql://localhost:3306/arco";
            String usuario = "root";
            String senha = "root";
            
@@ -46,4 +45,4 @@ public class Conexão {
      
      
 
-}*/
+}

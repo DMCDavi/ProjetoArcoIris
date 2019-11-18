@@ -12,11 +12,9 @@ package Model;
 public abstract class Pessoa {
     private int id;
     private String nome;
-    private String sobreNome;
-    private char genero;
+    private String genero;
     private String email;
     private String CPF;
-    private Endereco endereço;
 
     public int getId() {
         return this.id;
@@ -34,19 +32,11 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public String getSobreNome() {
-        return this.sobreNome;
-    }
-
-    public void setSobreNome(String sobreNome) {
-        this.sobreNome = sobreNome;
-    }
-
-    public char getGenero() {
+    public String getGenero() {
         return this.genero;
     }
 
-    public void setGenero(char genero) {
+    public void setGenero(String genero) {
         this.genero = genero;
     }
 
@@ -66,11 +56,4 @@ public abstract class Pessoa {
         this.CPF = CPF;
     }
 
-    public Endereco getEndereço() {
-        return this.endereço;
-    }
-
-    public void setEndereço(Endereco endereço) {
-        this.endereço = endereço;
-    }
 }
